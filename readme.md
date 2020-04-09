@@ -51,7 +51,7 @@ Kill a specfic container. Output will be similar to [this]().
 ```
 docker kill <containter ID>
 ```
-List all images currently on your local machine. Output will be similar to [this](https://drive.google.com/file/d/1IfIiM2-WpjfYzUFH9NJV1ljBK-crwcu0/view?usp=sharing). Docker [documentation link](https://docs.docker.com/v17.12/edge/engine/reference/commandline/image_ls/). Relevant [stackoverflow link](https://stackoverflow.com/questions/30543409/how-to-check-if-a-docker-image-with-a-specific-tag-exist-locally)
+List all images currently on your local machine. Output will be similar to [this](https://drive.google.com/file/d/1IfIiM2-WpjfYzUFH9NJV1ljBK-crwcu0/view?usp=sharing). Docker [documentation link](https://docs.docker.com/v17.12/edge/engine/reference/commandline/image_ls/). Relevant [stackoverflow link](https://stackoverflow.com/questions/30543409/how-to-check-if-a-docker-image-with-a-specific-tag-exist-locally) 
 ```
 docker images
 ```
