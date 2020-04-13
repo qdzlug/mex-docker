@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("qdzlug/mex-docker")
+        app = docker.build("demoorg/images/mex-docker")
     }
 
     stage('Test image') {
@@ -28,8 +28,8 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry('https://docker.mobiledgex.net', '/demoorg/images/MeX-Demo') {
-            app.push("${env.BUILD_NUMBER}")
+        docker.withRegistry('https://docker.mobiledgex.net/demoorg/images', 'MeX-Demo') {
+            app.push("${env.1.1}")
             app.push("latest")
         }
     }
